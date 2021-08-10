@@ -1,4 +1,4 @@
-html{
+* {
     box-sizing: border-box;
 }
 
@@ -17,4 +17,16 @@ footer a {
 .social {
     height: 25px;
     width: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#tienda, #tartas {
+    background-color: #8acccf
+}
+
+#eventos {
+    background-color: #7bb5b8
 }
