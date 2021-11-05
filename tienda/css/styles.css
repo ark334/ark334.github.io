@@ -37,9 +37,15 @@ section {
     background-color: #7bb5b8
 }
 
+.frozen {
+    font-family: 'ice_kingdom_-_bold_-_por_kustren-webfont', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+
 /* Navbar y botón hamburguesa */
 
-.header{
+.header {
     border-bottom: 1px solid teal
 }
 
