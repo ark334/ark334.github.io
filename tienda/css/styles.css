@@ -43,17 +43,59 @@ section {
     font-style: normal;
 }
 
-#test img {
-    opacity: 1;
-    -webkit-transition: opacity 1s ease-in;
-       -moz-transition: opacity 1s ease-in;
-        -ms-transition: opacity 1s ease-in;
-         -o-transition: opacity 1s ease-in;
-            transition: opacity 1s ease-in;
-}
+/* Animation fade in */
 
-#test img.load {
-    opacity: 0;
+.port {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
 }
 
 /* Navbar y botón hamburguesa */
