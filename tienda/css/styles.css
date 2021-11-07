@@ -44,16 +44,16 @@ section {
 }
 
 #test img {
-    opacity: 0;
-    -webkit-transition: opacity 2s ease-in;
-       -moz-transition: opacity 2s ease-in;
-        -ms-transition: opacity 2s ease-in;
-         -o-transition: opacity 2s ease-in;
-            transition: opacity 2s ease-in;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in;
+       -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+         -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
 }
 
 #test img.load {
-    opacity: 1;
+    opacity: 0;
 }
 
 /* Navbar y botón hamburguesa */
