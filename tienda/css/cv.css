@@ -1,0 +1,182 @@
+    body, html {
+        height: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        opacity: 0.7;
+        /* The image used */
+        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+
+        /* Full height */
+        height: 20%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pic {
+        opacity: 0.7;
+        /* The image used */
+        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+
+        /* Full height */
+        height: 15%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pic2 {
+        opacity: 0.7;
+        /* The image used */
+        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+
+        /* Full height */
+        width: 33%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pic3 {
+        opacity: 0.7;
+        /* The image used */
+        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+
+        /* Full height */
+        width: 33%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pic4 {
+        opacity: 0.7;
+        /* The image used */
+        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+
+        /* Full height */
+        height: 5%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .about-cent {
+        background-image: linear-gradient(to right, #C2B7AA , #C67816);
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+    }
+
+    .exp {
+        padding: 50px;
+        background-image: linear-gradient(to right, #C67816 , #C2B7AA);
+    }
+
+    .box {
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid;
+        border-radius: 1.5em;
+        background-color: lightgray;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    .years {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .years button:hover {
+        background-color: lightgreen;
+    }
+
+    #select {
+        border: 1px solid;
+        border-radius: 0;
+        padding: 5px 10px;
+        box-shadow: none;
+    }
+
+    .est {
+        padding: 50px;
+        border-top: 5px solid burlywood;
+        background-image: linear-gradient(to right, white , grey);
+    }
+
+    footer {
+        margin: 0 auto;
+        padding: 50px;
+        max-width: 1450px;
+    }
+
+    @media (min-width: 700px) {
+        .years button {
+            padding: 10px 50px;
+            color: white;
+            border-color: lightskyblue;
+            background-color: lightskyblue;
+            border-radius: 1em;
+        }
+
+        #2021 {
+            background-color: darkgreen;
+        }
+
+        .roundpic {
+            display: none;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .years button {
+            padding: 0 10px;
+            color: white;
+            border-color: lightskyblue;
+            background-color: lightskyblue;
+            border-radius: 1em;
+        }
+
+        #2021 {
+            background-color: darkgreen;
+        }
+
+        .roundpic {
+            border-radius: 10em;
+            width: 180px;
+            position: absolute;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        header {
+            height: 35%;
+        }
+    }
