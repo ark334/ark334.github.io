@@ -189,7 +189,7 @@
         }
 
         .header {
-            background-image: url("/Practicas/tienda/images/ciara7.jpg");
+            background-image: url("../images/ciara7.jpg");
             height: 60%;
             display: flex;
             flex-direction: column;
