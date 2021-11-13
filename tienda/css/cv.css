@@ -8,7 +8,7 @@
         justify-content: end;
         opacity: 0.7;
         /* The image used */
-        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+        background-image: url("../images/ciara7.jpg");
 
         /* Full height */
         height: 30%;
@@ -23,7 +23,7 @@
     .pic {
         opacity: 0.7;
         /* The image used */
-        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+        background-image: url("../images/ciara7.jpg");
 
         /* Full height */
         height: 15%;
@@ -38,7 +38,7 @@
     .pic2 {
         opacity: 0.7;
         /* The image used */
-        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+        background-image: url("../images/ciara7.jpg");
 
         /* Full height */
         width: 33%;
@@ -53,7 +53,7 @@
     .pic3 {
         opacity: 0.7;
         /* The image used */
-        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+        background-image: url("../images/ciara7.jpg");
 
         /* Full height */
         width: 33%;
@@ -68,7 +68,7 @@
     .pic4 {
         opacity: 0.7;
         /* The image used */
-        background-image: url("/Practicas/tienda/images/ciara7.jpg");
+        background-image: url("../images/ciara7.jpg");
 
         /* Full height */
         height: 5%;
