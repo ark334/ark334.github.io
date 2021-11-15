@@ -102,13 +102,17 @@ var collapseList = collapseElementList.map(function (collapseEl) {
 
 function fun1() {
   document.getElementById("select").style.display = "none";
-  document.getElementById("2010").style.backgroundColor = "darkgreen";
+  document.getElementById("2010").style.backgroundColor = "lightgreen";
   document.getElementById("a2012").classList.remove("show");
   document.getElementById("a2014").classList.remove("show");
+  document.getElementById("a2017").classList.remove("show");
+  document.getElementById("a2021").classList.remove("show");
   document.getElementById("2012").style.backgroundColor = "lightskyblue";
   document.getElementById("2014").style.backgroundColor = "lightskyblue";
+  document.getElementById("2017").style.backgroundColor = "lightskyblue";
+  document.getElementById("i2021").style.backgroundColor = "lightskyblue";
   location.href = "#";
-  location.href = "#2010";
+  location.href = "#years";
 }
 
 function fun2() {
@@ -116,10 +120,14 @@ function fun2() {
   document.getElementById("2012").style.backgroundColor = "lightgreen";
   document.getElementById("a2010").classList.remove("show");
   document.getElementById("a2014").classList.remove("show");
+  document.getElementById("a2017").classList.remove("show");
+  document.getElementById("a2021").classList.remove("show");
   document.getElementById("2010").style.backgroundColor = "lightskyblue";
   document.getElementById("2014").style.backgroundColor = "lightskyblue";
+  document.getElementById("2017").style.backgroundColor = "lightskyblue";
+  document.getElementById("i2021").style.backgroundColor = "lightskyblue";
   location.href = "#";
-  location.href = "#2012";
+  location.href = "#years";
 }
 
 function fun3() {
@@ -127,30 +135,42 @@ function fun3() {
   document.getElementById("2014").style.backgroundColor = "lightgreen";
   document.getElementById("a2010").classList.remove("show");
   document.getElementById("a2012").classList.remove("show");
+  document.getElementById("a2017").classList.remove("show");
+  document.getElementById("a2021").classList.remove("show");
   document.getElementById("2010").style.backgroundColor = "lightskyblue";
   document.getElementById("2012").style.backgroundColor = "lightskyblue";
+  document.getElementById("2017").style.backgroundColor = "lightskyblue";
+  document.getElementById("i2021").style.backgroundColor = "lightskyblue";
   location.href = "#";
-  location.href = "#2014";
+  location.href = "#years";
 }
 
 function fun4() {
   document.getElementById("select").style.display = "none";
-  document.getElementById("2014").style.backgroundColor = "lightgreen";
+  document.getElementById("2017").style.backgroundColor = "lightgreen";
   document.getElementById("a2010").classList.remove("show");
   document.getElementById("a2012").classList.remove("show");
+  document.getElementById("a2014").classList.remove("show");
+  document.getElementById("a2021").classList.remove("show");
   document.getElementById("2010").style.backgroundColor = "lightskyblue";
   document.getElementById("2012").style.backgroundColor = "lightskyblue";
+  document.getElementById("2014").style.backgroundColor = "lightskyblue";
+  document.getElementById("i2021").style.backgroundColor = "lightskyblue";
   location.href = "#";
-  location.href = "#2014";
+  location.href = "#years";
 }
 
 function fun5() {
   document.getElementById("select").style.display = "none";
-  document.getElementById("2014").style.backgroundColor = "lightgreen";
+  document.getElementById("i2021").style.backgroundColor = "lightgreen";
   document.getElementById("a2010").classList.remove("show");
   document.getElementById("a2012").classList.remove("show");
+  document.getElementById("a2014").classList.remove("show");
+  document.getElementById("a2017").classList.remove("show");
   document.getElementById("2010").style.backgroundColor = "lightskyblue";
   document.getElementById("2012").style.backgroundColor = "lightskyblue";
+  document.getElementById("2014").style.backgroundColor = "lightskyblue";
+  document.getElementById("2017").style.backgroundColor = "lightskyblue";
   location.href = "#";
-  location.href = "#2014";
+  location.href = "#years";
 }
