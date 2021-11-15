@@ -18,6 +18,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .header {
+        font-family: 'Dancing Script', cursive;
     }
 
     .pic {
@@ -89,11 +94,14 @@
         margin: 0 auto;
         padding: 20px;
         position: relative;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .exp {
         padding: 50px;
         background-image: linear-gradient(to right, #C67816 , #C2B7AA);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.2em;
     }
 
     .box {
@@ -112,17 +120,6 @@
         justify-content: space-evenly;
     }
 
-    .years button:hover {
-        background-color: lightgreen;
-    }
-
-    #select {
-        border: 1px solid;
-        border-radius: 0;
-        padding: 5px 10px;
-        box-shadow: none;
-    }
-
     .est {
         padding: 50px;
         border-top: 5px solid burlywood;
@@ -132,7 +129,31 @@
     footer {
         margin: 0 auto;
         padding: 50px;
-        max-width: 1450px;
+        max-width: 1080px;
+        position: relative;
+    }
+
+    footer img {
+        float: left;
+        clear: both;
+        margin-right: 10px;
+    }
+
+    #select {
+        border: 1px solid;
+        border-radius: 0;
+        padding: 5px 10px;
+        box-shadow: none;
+        font-size: 1em;
+    }
+
+    #i2021 {
+        background-color: lightgreen;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-weight: bold;    
     }
 
     @media (min-width: 700px) {
@@ -142,10 +163,6 @@
             border-color: lightskyblue;
             background-color: lightskyblue;
             border-radius: 1em;
-        }
-
-        #2021 {
-            background-color: darkgreen;
         }
 
         .roundpic {
@@ -164,10 +181,6 @@
             border-color: lightskyblue;
             background-color: lightskyblue;
             border-radius: 1em;
-        }
-
-        #2021 {
-            background-color: darkgreen;
         }
 
         .roundpic {
