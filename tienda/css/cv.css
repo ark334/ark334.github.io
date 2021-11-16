@@ -101,7 +101,6 @@
         padding: 50px 20px;
         background-image: linear-gradient(to right, #C67816 , #C2B7AA);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.2em;
     }
 
     .box {
@@ -151,9 +150,9 @@
         background-color: lightgreen;
     }
 
-    h3 {
-        font-size: 2em;
-        font-weight: bold;    
+    .title {
+        font-size: 3em;
+        font-family: 'Bebas Neue', cursive;
     }
 
     @media (min-width: 700px) {
