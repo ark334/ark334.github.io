@@ -9,10 +9,35 @@
 }
 
 .main {
-    max-width: 90%;
+    padding: 15px;
     margin: 0 auto;
 }
 
+.main2 {
+    background-color: #F9F9F9;
+    padding: 15px;
+}
+
 footer {
-    background-color: lightgray;
+    background-color: gainsboro
+}
+
+nav {
+    background-color: burlywood;
+}
+
+nav ul {
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
 }
