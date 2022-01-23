@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lista de la compra</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="d-flex">
+        <label for="art-habituales" style="margin-right: 20px;">Artículos habituales </label>
+        <select name="art-habituales" id="art-habituales">
+            <option value="Leche">Leche</option>
+            <option value="Huevos">Huevos</option>
+            <option value="Pan">Pan</option>
+            <option value="Papas">Papas</option>
+        </select>
+    </div>
+    <div class="text-center">
+    <button onclick="add1()">Añadir</button>
+    </div>
+
+    <div class="d-flex mt-3">
+        <p style="margin-right: 20px;">Precio (si lo sabes)</p>
+        <input id="precio" type="number"></input> €
+    </div>
+    <div class="text-center">
+        <button onclick="add2()">Añadir</button>
+    </div>
+
+    <div class="d-flex mt-4">
+        <p style="margin-right: 20px;">Añadir nuevo articulo</p>
+        <textarea id="nuevo-articulo" cols="20" rows="1"></textarea>
+    </div>
+
+    <div class="infobox text-center">
+        <p id="info2" class="mt-1"></p>
+        <p id="info" class="mt-1"></p>
+    </div>
+
+    <table id="lista" class="my-3">
+        <tr>
+            <th class="text-center">Artículo</th>
+            <th>Precio</th>
+        </tr>
+    </table>
+
+    <p id="price" class="price text-center col-6">Precio total: <span id="total"></span></p>
+
+    <script src="app.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
