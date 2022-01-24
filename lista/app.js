@@ -21,6 +21,7 @@ const add1 = () => {
     }
 
     document.getElementById("oculta").style.opacity = "1";
+    document.getElementById("reload").style.opacity = "1";
     let tr = document.createElement("tr");
     let td = document.createElement("td");
     let tdprice = document.createElement("td");
@@ -62,6 +63,7 @@ const add2 = () => {
     }
 
     document.getElementById("oculta").style.opacity = "1";
+    document.getElementById("reload").style.opacity = "1";
     let tr = document.createElement("tr");
     let td = document.createElement("td");
     let tdprice = document.createElement("td");
