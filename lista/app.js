@@ -2,9 +2,9 @@ let lista = [];
 let prices=[];
 let art="";
 
+let total = document.getElementById("total");
+
 const add1 = () => {
-    selectElement = document.getElementById("art-habituales");
-    art = selectElement.value;
     let price = document.getElementById("precio").value;
 
     if (!lista.includes(art.toUpperCase())) {
@@ -20,16 +20,14 @@ const add1 = () => {
         return;
     }
 
-    document.getElementById("lista").style.visibility = "visible";
-    document.getElementById("price").style.visibility = "visible";
-    let total = document.getElementById("total");
+    document.getElementById("oculta").style.opacity = "1";
     let tr = document.createElement("tr");
     let td = document.createElement("td");
     let tdprice = document.createElement("td");
     td.textContent = lista[lista.length - 1];
     td.id = lista.length;
     td.addEventListener("click", del, false);
-    tdprice.textContent  = price;
+    tdprice.textContent = price;
     document.getElementById("lista").appendChild(tr);
     document.getElementById("lista").appendChild(td);
     document.getElementById("lista").appendChild(tdprice);
@@ -37,8 +35,8 @@ const add1 = () => {
 }
 
 const add2 = () => {
-    selectElement = document.getElementById("nuevo-articulo");
-    art = selectElement.value;
+    selectElement2 = document.getElementById("nuevo-articulo");
+    art = selectElement2.value;
     let price = document.getElementById("precio").value;
 
     if (art === "") {
@@ -51,7 +49,7 @@ const add2 = () => {
     else if (!lista.includes(art.toUpperCase())) {
         lista.push(art.toUpperCase());
         prices.push(Number(price));
-        document.getElementById("precio").value= "";
+        document.getElementById("precio").value = "";
         document.getElementById("nuevo-articulo").value = "";
     }
     else {
@@ -63,19 +61,28 @@ const add2 = () => {
         return;
     }
 
-    document.getElementById("lista").style.visibility = "visible";
-    document.getElementById("price").style.visibility = "visible";
+    document.getElementById("oculta").style.opacity = "1";
     let tr = document.createElement("tr");
     let td = document.createElement("td");
     let tdprice = document.createElement("td");
     td.textContent = lista[lista.length - 1];
     td.id = lista.length;
     td.addEventListener("click", del, false);
-    tdprice.textContent  = price;
+    tdprice.textContent = price;
     document.getElementById("lista").appendChild(tr);
     document.getElementById("lista").appendChild(td);
     document.getElementById("lista").appendChild(tdprice);
     total.innerText = prices.reduce((a, b) => (a + b)) + " €";
+}
+
+function addArt(prod) {
+    art = prod;
+    add1();
+}
+
+function del() {
+    let el = document.getElementById(this.id);
+    el.classList.toggle("tachado");
 }
 
 // const del = (art) => {
@@ -85,8 +92,3 @@ const add2 = () => {
 //     else console.log("no existe el articulo");
 //     return lista;
 // };
-
-function del() {
-    let el = document.getElementById(this.id);
-    el.classList.toggle("tachado");
-}
