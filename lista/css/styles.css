@@ -58,7 +58,7 @@ th {
     background-color: goldenrod;
 }
 
-#oculta {
+#oculta, #reload {
     opacity: 0;
     transition: opacity 1s;
     -webkit-transition: opacity 1s; /* Safari */
