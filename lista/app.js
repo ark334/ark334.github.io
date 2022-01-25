@@ -3,6 +3,9 @@ let prices=[];
 let art="";
 
 let total = document.getElementById("total");
+let selectElement2 = document.getElementById("nuevo-articulo");
+selectElement2.addEventListener("focus", dis, false);
+selectElement2.addEventListener("focusout", appr, false);
 
 const add1 = () => {
     let price = document.getElementById("precio").value;
@@ -36,7 +39,6 @@ const add1 = () => {
 }
 
 const add2 = () => {
-    selectElement2 = document.getElementById("nuevo-articulo");
     art = selectElement2.value;
     let price = document.getElementById("precio").value;
 
@@ -85,6 +87,14 @@ function addArt(prod) {
 function del() {
     let el = document.getElementById(this.id);
     el.classList.toggle("tachado");
+}
+
+function dis() {
+    document.getElementById("price").style.visibility = "hidden";
+}
+
+function appr() {
+    document.getElementById("price").style.visibility = "visible";
 }
 
 // const del = (art) => {
