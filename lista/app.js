@@ -94,7 +94,9 @@ function dis() {
 }
 
 function appr() {
-    document.getElementById("price").style.visibility = "visible";
+    setTimeout(() => {
+        document.getElementById("price").style.visibility = "visible";
+    }, 1000);
 }
 
 // const del = (art) => {
