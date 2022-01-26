@@ -6,6 +6,9 @@ let total = document.getElementById("total");
 let selectElement2 = document.getElementById("nuevo-articulo");
 selectElement2.addEventListener("focus", dis, false);
 selectElement2.addEventListener("focusout", appr, false);
+setTimeout(() => {
+    document.getElementById("footer").style.opacity = "1";
+}, 2000);
 
 const add1 = () => {
     let price = document.getElementById("precio").value;
@@ -17,6 +20,7 @@ const add1 = () => {
     }
     else {
         document.getElementById("info").innerText = `Ya tienes ${art} en la lista`;
+        document.getElementById("precio").value = "";
         setTimeout(() => {
             document.getElementById("info").innerText = "";
         }, 2000);
@@ -49,8 +53,9 @@ const add2 = () => {
         }, 2000);
         return;
     }
-    else if (!lista.includes(art.toUpperCase())) {
-        lista.push(art.toUpperCase());
+    else if (!lista.includes(art.trim().toUpperCase())) {
+        // if (art[art.length-1] === " " || art[0] === " ") console.log("espacio");
+        lista.push(art.trim().toUpperCase());
         prices.push(Number(price));
         document.getElementById("precio").value = "";
         document.getElementById("nuevo-articulo").value = "";
@@ -58,6 +63,7 @@ const add2 = () => {
     else {
         document.getElementById("info2").innerText = `Ya tienes ${art} en la lista`;
         document.getElementById("nuevo-articulo").value = "";
+        document.getElementById("precio").value = "";
         setTimeout(() => {
             document.getElementById("info2").innerText = "";
         }, 2000);
@@ -98,11 +104,3 @@ function appr() {
         document.getElementById("price").style.visibility = "visible";
     }, 1000);
 }
-
-// const del = (art) => {
-//     if (lista.includes(art)) {
-//         lista.splice(lista.indexOf(art), 1);
-//     }
-//     else console.log("no existe el articulo");
-//     return lista;
-// };
