@@ -60,8 +60,10 @@ table, th, td, tr {
     border: 1px solid;
     font-family: 'Swanky and Moo Moo', cursive;
     font-size: 18px;
+    padding-left: 15px;
     background-color: lemonchiffon;
 }
+
 
 th {
     background-color: goldenrod;
