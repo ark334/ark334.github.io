@@ -41,6 +41,9 @@ input {
 
 button {
     padding: 0px 30px;
+    background-color: lightseagreen;
+    color: white;
+    border-color: whitesmoke;
     border-radius: 1rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
