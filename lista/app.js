@@ -20,6 +20,7 @@ const add1 = () => {
     }
     else {
         document.getElementById("info").innerText = `Ya tienes ${art} en la lista`;
+        document.getElementById("info").style.backgroundColor = "lightsalmon";
         document.getElementById("precio").value = "";
         setTimeout(() => {
             document.getElementById("info").innerText = "";
@@ -48,6 +49,7 @@ const add2 = () => {
 
     if (art === "") {
         document.getElementById("info2").innerText = "Escriba un articulo";
+        document.getElementById("info2").style.backgroundColor = "lightsalmon";
         setTimeout(() => {
             document.getElementById("info2").innerText = "";
         }, 2000);
@@ -62,6 +64,7 @@ const add2 = () => {
     }
     else {
         document.getElementById("info2").innerText = `Ya tienes ${art} en la lista`;
+        document.getElementById("info2").style.backgroundColor = "lightsalmon";
         document.getElementById("nuevo-articulo").value = "";
         document.getElementById("precio").value = "";
         setTimeout(() => {
