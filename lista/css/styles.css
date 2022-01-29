@@ -22,8 +22,11 @@ input {
 
 .infobox {
     height: 40px;
-    color: blue;
+    color: #e11e19;
     overflow: hidden;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .tachado {
