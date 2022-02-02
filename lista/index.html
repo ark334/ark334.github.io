@@ -50,18 +50,18 @@
                 <img src="img/rollo.png" onclick="addArt('rollo cocina/baño')" width="10%" alt="rollo cocina y baño">
             </ul>
         </div>
+        <div class="d-flex justify-content-center mt-3">
+            <p style="margin-right: 20px;">Precio (si lo sabes)</p>
+            <input id="precio" type="number"></input> €
+        </div>
         <div class="d-flex">
             <p class="col-6" style="margin-right: 20px; font-size: 13px">Añade un nuevo artículo en
-                la derecha, y el precio en la casilla de abajo (opcional)</p>
+                la derecha, y el precio en la casilla de arriba (opcional)</p>
             <textarea class="col-5" id="nuevo-articulo"></textarea>
         </div>
         <div class="d-flex justify-content-around" style="margin-top: -12px;">
             <button id="reload" onclick="location.reload()">Limpiar lista</button>
             <button onclick="add2()">Añadir</button>
-        </div>
-        <div class="d-flex justify-content-center mt-3">
-            <p style="margin-right: 20px;">Precio (si lo sabes)</p>
-            <input id="precio" type="number"></input> €
         </div>
         <div class="infobox text-center">
             <p id="info2" class=""></p>
