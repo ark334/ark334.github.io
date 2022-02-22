@@ -26,7 +26,7 @@ const add1 = () => {
             document.getElementById("info").innerText = "";
             document.getElementById("info").style.backgroundColor= "";
         }, 2000);
-        // return;
+        return;
     }
 
     document.getElementById("oculta").style.opacity = "1";
@@ -55,7 +55,7 @@ const add2 = () => {
             document.getElementById("info").innerText = "";
             document.getElementById("info").style.backgroundColor= "";
         }, 2000);
-        // return;
+        return;
     }
     else if (!lista.includes(art.trim().toUpperCase())) {
         lista.push(art.trim().toUpperCase());
@@ -72,7 +72,7 @@ const add2 = () => {
             document.getElementById("info").innerText = "";
             document.getElementById("info").style.backgroundColor= "";
         }, 2000);
-        // return;
+        return;
     }
 
     document.getElementById("oculta").style.opacity = "1";
