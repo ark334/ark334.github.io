@@ -24,6 +24,7 @@ const add1 = () => {
         document.getElementById("precio").value = "";
         setTimeout(() => {
             document.getElementById("info").innerText = "";
+            document.getElementById("info").style.backgroundColor= "";
         }, 2000);
         return;
     }
@@ -48,10 +49,11 @@ const add2 = () => {
     let price = document.getElementById("precio").value;
 
     if (art === "") {
-        document.getElementById("info2").innerText = "Escriba un articulo";
-        document.getElementById("info2").style.backgroundColor = "lightsalmon";
+        document.getElementById("info").innerText = "Escribe un articulo";
+        document.getElementById("info").style.backgroundColor = "lightsalmon";
         setTimeout(() => {
-            document.getElementById("info2").innerText = "";
+            document.getElementById("info").innerText = "";
+            document.getElementById("info").style.backgroundColor= "";
         }, 2000);
         return;
     }
@@ -63,12 +65,13 @@ const add2 = () => {
         document.getElementById("nuevo-articulo").value = "";
     }
     else {
-        document.getElementById("info2").innerText = `Ya tienes ${art} en la lista`;
-        document.getElementById("info2").style.backgroundColor = "lightsalmon";
+        document.getElementById("info").innerText = `Ya tienes ${art} en la lista`;
+        document.getElementById("info").style.backgroundColor = "lightsalmon";
         document.getElementById("nuevo-articulo").value = "";
         document.getElementById("precio").value = "";
         setTimeout(() => {
-            document.getElementById("info2").innerText = "";
+            document.getElementById("info").innerText = "";
+            document.getElementById("info").style.backgroundColor= "";
         }, 2000);
         return;
     }
