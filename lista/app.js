@@ -58,6 +58,7 @@ const add2 = () => {
         return;
     }
     else if (!lista.includes(art.trim().toUpperCase())) {
+        // if (art[art.length-1] === " " || art[0] === " ") console.log("espacio");
         lista.push(art.trim().toUpperCase());
         prices.push(Number(price));
         document.getElementById("precio").value = "";
